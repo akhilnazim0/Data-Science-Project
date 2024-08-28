@@ -1,7 +1,6 @@
 # Data-Science-Project
 ## Overview
-This project leverages machine learning to predict heart disease in diabetic patients by analyzing their clinical and demographic data. The goal is to develop a tool that assists doctors in identifying high-risk patients early, thereby improving their treatment plans and outcomes.
-
+This project applies machine learning techniques to predict the risk of heart disease in diabetic patients by analyzing their clinical and demographic data. The goal is to assist healthcare professionals in identifying high-risk patients early, enabling better treatment planning and improving patient outcomes.
 ### Table of Contents
 - [Overview](#overview)
 - [Project Structure](#project-structure)
@@ -12,34 +11,41 @@ This project leverages machine learning to predict heart disease in diabetic pat
 ### Project Structure
 ~~~
 ├── data/
-│ ├── raw/
-│ ├── processed/
-│ └── ...
+│   ├── raw/                      # Raw dataset files
+│   ├── processed/                # Processed and cleaned datasets
+│   └── ...
 ├── notebooks/
-│ ├── data_preprocessing.ipynb
-│ ├── exploratory_analysis.ipynb
-│ └── model_training.ipynb
+│   ├── data_preprocessing.ipynb  # Data cleaning and preprocessing steps
+│   ├── pca_analysis.ipynb        # Principal Component Analysis (PCA)
+│   ├── model_training.ipynb      # Model training and evaluation
+│   └── model_evaluation.ipynb    # Model evaluation and risk score analysis
 ├── src/
-│ ├── data_processing.py
-│ ├── model.py
-│ └── utils.py
-├── tests/
-├── README.md
-├── requirements.txt
-└──
+│   ├── data_processing.py        # Scripts for data processing
+│   ├── model.py                  # Scripts for model training and prediction
+│   └── utils.py                  # Utility functions for the project
+├── tests/                        # Test cases for the project
+├── README.md                     # Project overview and instructions (this file)
+├── requirements.txt              # List of required Python libraries
+└── ...
 ~~~
 ### Usage
 
 - **Data Preprocessing:** Run the data preprocessing notebook to clean and prepare the data.
-  - [notebooks/data_preprocessing.ipynb](notebooks/data_preprocessing.ipynb)
-
+  - [notebooks/data_preprocessing.ipynb]
 - **Principle Component Analysis:** Perform PCA to understand the data and identify important features.
-  - [notebooks/exploratory_analysis.ipynb](notebooks/exploratory_analysis.ipynb)
+  - [notebooks/exploratory_analysis.ipynb]
 
-- **Model Training:** Train the machine learning model using the prepared dataset.
-  - [notebooks/model_training.ipynb](notebooks/model_training.ipynb)
+- ### Model Training
+Train various machine learning models using the prepared dataset. The models include Logistic Regression, Random Forest, and K-Nearest Neighbors. This step also involves applying SMOTE to balance the dataset and scaling the features for better model performance.
+- Notebook: `notebooks/model_training.ipynb`
 
-- **Prediction:** Use the trained model to predict heart disease risk on new data. Refer to `src/model.py` for prediction scripts.
+### Model Evaluation & Risk Score Calculation
+Evaluate the trained models using various metrics and calculate a risk score for heart disease. The risk score is derived from a Logistic Regression model and normalized for comparison. This step also includes plotting the predicted vs. actual risk scores to visually assess the models' performance.
+- Notebook: `notebooks/model_evaluation.ipynb`
+
+### Prediction
+Use the trained models to predict heart disease risk on new data. Refer to `src/model.py` for the prediction scripts, which include functions for making predictions using the trained models.
+
 ### Datasets
 
 - **Description:** The dataset used in this project contains clinical and demographic data of diabetic patients.
@@ -53,12 +59,13 @@ This project leverages machine learning to predict heart disease in diabetic pat
 
 - **Python:**
 - **Libraries:**
-  - pandas
-  - numpy
-  - scikit-learn
-  - matplotlib
-  - seaborn
-  - jupyter
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `matplotlib`
+- `seaborn`
+- `imblearn` (for SMOTE)
+- `jupyter`
     
 ### Contact
 - **Name:** AKHIL NAZIM
