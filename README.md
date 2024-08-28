@@ -33,7 +33,7 @@ This project leverages machine learning to predict heart disease in diabetic pat
 - **Data Preprocessing:** Run the data preprocessing notebook to clean and prepare the data.
   - [notebooks/data_preprocessing.ipynb](notebooks/data_preprocessing.ipynb)
 
-- **Exploratory Data Analysis:** Perform EDA to understand the data and identify important features.
+- **Principle Component Analysis:** Perform PCA to understand the data and identify important features.
   - [notebooks/exploratory_analysis.ipynb](notebooks/exploratory_analysis.ipynb)
 
 - **Model Training:** Train the machine learning model using the prepared dataset.
@@ -59,9 +59,10 @@ This project leverages machine learning to predict heart disease in diabetic pat
   - matplotlib
   - seaborn
   - jupyter
+    
 ### Contact
 - **Name:** AKHIL NAZIM
 - **Email:** akhilnka@gmail.com
-- **GitHub:** 
+- **GitHub:** https://github.com/akhilnazim0/Data-Science-Project.git
 
 
