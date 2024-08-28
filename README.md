@@ -60,8 +60,8 @@ This project leverages machine learning to predict heart disease in diabetic pat
   - seaborn
   - jupyter
 ### Contact
-- **Name:** 
-- **Email:** 
+- **Name:** AKHIL NAZIM
+- **Email:** akhilnka@gmail.com
 - **GitHub:** 
 
 
